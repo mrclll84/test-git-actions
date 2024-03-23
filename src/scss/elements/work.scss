@@ -1,0 +1,104 @@
+.work {
+    margin-bottom: 70px;
+    padding: 0 10px;
+    &__title {
+        margin-bottom: 70px;
+        @media (max-width:$mobile) {
+            margin-bottom: 30px;
+            padding: 0 30px;
+        }
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 245px);
+        gap: 60px;
+        counter-reset: li;
+        max-width: 100%;
+        padding: 0 30px;
+        @media (max-width: $tablet) {
+            grid-template-columns: repeat(2, 245px);
+            justify-content: space-around;
+        }
+        @media (max-width: $mobile) {
+            grid-template-columns: 1fr;
+            gap: 5px;
+        }
+    }
+
+    &__item {
+        p {
+            padding-top: 90px;
+            color: $special_dark-grey;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            @media (max-width:$mobile) {
+                padding-top: 0;
+                padding-left: 90px;
+            }
+        }
+
+        &.leaf {
+            &::before {
+                background-image: url("../../img/advantage-leaf@1x.png");
+            }
+        }
+
+        &.tub {
+            &::before {
+                background-image: url("../../img/advantage-powder@1x.png");
+            }
+        }
+
+        &.eat {
+            &::before {
+                background-image: url("../../img/advantage-dining@1x.png");
+            }
+        }
+
+        &.alarm {
+            &::before {
+                background-image: url("../../img/advantage-clock@1x.png");
+            }
+        }
+
+        &.leaf,
+        &.tub,
+        &.eat,
+        &.alarm {
+            position: relative;
+            &::before {
+                position: absolute;
+                content: "";
+                background-color: $basic-green;
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 80px;
+                height: 80px;
+                @media (max-width:$mobile) {
+                    top: calc(50% - 40px);
+                }
+            }
+            &::after {
+                position: absolute;
+                content: counter(li, decimal);
+                counter-increment: li;
+                width: 150px;
+                font-size: 280px;
+                line-height: 200px;
+                color: $basic-grey;
+                top: -15px;
+                right: -15px;
+                z-index: -1;
+                @media (max-width:$tablet) {
+                    right: 15px;
+                }
+                @media (max-width:$mobile) {
+                    display: none;
+                }
+            }
+        }
+    }
+}

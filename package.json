@@ -1,0 +1,27 @@
+{
+  "name": "catenergy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gulp serv"
+  },
+  "author": "Bogdan",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "postcss": "^8.4.31"
+  },
+  "dependencies": {
+    "gulp-cleancss": "^0.2.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^9.0.0",
+    "sass": "^1.69.5"
+  }
+}

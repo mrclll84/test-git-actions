@@ -1,0 +1,167 @@
+section.catalog{
+    margin-bottom: 50px; 
+}
+.catalog {
+    .container-fluid {
+        max-width: 1300px;
+    }
+    &-list {
+        display: grid;
+        justify-content: space-evenly;
+        grid-template-columns: repeat(4, 245px);
+        gap: 60px;
+        @media (max-width:$tablet) {
+            grid-template-columns: repeat(2, 325px);
+        }
+
+        @media (max-width:$mobile) {
+            grid-template-columns: 320px;
+        }
+    }
+    &-list-card {
+        max-width: 245px;
+        width: 100%;
+        background: linear-gradient(0deg,$basic-grey  0,$basic-grey 90%,transparent 66%);
+        @media (max-width:$tablet) {
+            max-width: 325px;
+        }
+        @media (max-width:$mobile) {
+            background: transparent;
+            max-width: 320px;
+            padding: 0;
+        }
+    }
+
+    &-list-body {
+        padding: 0 10px;
+        margin-bottom: 40px;
+        position: relative;
+        padding: 160px 0 0;
+        margin-bottom: 40px;
+        width: 100%;
+        img {
+            position:absolute;
+            top: 0;
+            width: 100%;
+            background-size: contain;
+            @media (max-width:$mobile) {
+                position: static;
+                max-width: 140px;
+                height: 100%;
+                background-size: cover;
+            }
+        }
+        @media (max-width:$tablet) {
+            padding: 220px 0 0;
+
+        }
+        @media (max-width:$mobile) {
+            max-width: 270px;
+            padding: 0 5px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+        }
+    }
+
+    &-list-params {
+        @include flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &-list-weight,&-list-taste,&-list-price {
+        @include flex;
+        max-width: 180px;
+        width: 100%;
+        padding-bottom: 0;
+        margin-bottom: 0;
+        position: relative;
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background-color: $special-grey;
+        }
+        span {
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            @media (max-width:$mobile) {
+                font-size: 14px;
+            }
+        } 
+        @media (max-width:$tablet) {
+            max-width: 260px;
+        }
+    }
+    &-list-actions {
+        padding: 0 10px;
+        max-width: 180px;
+        width: 100%;
+        margin: 0 auto 30px;
+        button {
+            width: 100%;
+            min-height: 40px;
+        }
+        @media (max-width:$tablet) {
+            max-width: 260px;
+        }
+        @media (max-width:$mobile) {
+            max-width: none;
+            width: 100%;
+        }
+    }
+    &-list-name {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        @media (max-width:$mobile) {
+            margin: 0;
+            text-align: left;
+            font-size: 16px;
+
+        }
+    }
+
+    &-list-card.isbig {
+        img {
+            transform: scale(1.2);
+            top: -10px;
+        }
+    }
+
+    .add-item{
+        border: 1px solid $basic-grey;
+        order: 1;
+        padding: 20px 10px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        &-header {
+            @include flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+            text-align: center;
+        }
+        &-title {
+            font-size: 20px;
+        }
+        &-description {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 200;
+            font-size: 16px;
+       }
+       .button-default {
+            width: 169px;
+            min-height: 40px;
+            background: $basic-grey;
+            color: $special_dark-grey;
+       }
+    }
+}
