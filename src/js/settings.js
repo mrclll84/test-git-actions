@@ -31,13 +31,13 @@ window.addEventListener("DOMContentLoaded", () => {
     const footerLogo = document.querySelector(".footer-academy img")
     function getWidth() {
         widthContainer = document.querySelector("body").offsetWidth
-        console.log(window.location.href)
+        console.log(window.location)
         if (footerLogo) {
             if (widthContainer > 768) {
-                footerLogo.src = window.location.href + "img/logo-footer.png"
+                footerLogo.src = "../img/logo-footer.png"
             }
             else {
-                footerLogo.src = window.location.href + "img/htmlAcademyMobile.png"
+                footerLogo.src = "../img/htmlAcademyMobile.png"
             }
         }
     }
