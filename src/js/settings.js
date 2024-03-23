@@ -84,49 +84,49 @@ window.addEventListener("DOMContentLoaded", () => {
     let catalog = [
         {
             name: " Cat Energy PRO 500 г",
-            image: "/img/chicken-small-desktop@1x.png",
+            image: "../img/chicken-small-desktop@1x.png",
             weight: "500 г",
             taste: "Курица",
             price: "700 Р."
         },
         {
             name: " Cat Energy PRO 1000 г",
-            image: "/img/chicken-small-desktop@1x.png",
+            image: "../img/chicken-small-desktop@1x.png",
             weight: "1000 г",
             taste: "Курица",
             price: "1000 Р."
         },
         {
             name: " Cat Energy PRO 500 г",
-            image: "/img/fish-small-desktop@1x.png",
+            image: "../img/fish-small-desktop@1x.png",
             weight: "500 г",
             taste: "Рыба",
             price: "700 Р."
         },
         {
             name: " Cat Energy PRO 1000 г",
-            image: "/img/fish-small-desktop@1x.png",
+            image: "../img/fish-small-desktop@1x.png",
             weight: "1000 г",
             taste: "Рыба",
             price: "1000 Р."
         },
         {
             name: " Cat Energy PRO 500 г",
-            image: "/img/buckwheat-small-desktop@1x.png",
+            image: "../img/buckwheat-small-desktop@1x.png",
             weight: "500 г",
             taste: "Гречка",
             price: "400 Р."
         },
         {
             name: " Cat Energy PRO 1000 г",
-            image: "/img/buckwheat-small-desktop@1x.png",
+            image: "../img/buckwheat-small-desktop@1x.png",
             weight: "1000 г",
             taste: "Гречка",
             price: "700 Р."
         },
         {
             name: " Cat Energy PRO 500 г",
-            image: "/img/rice-small-desktop@1x.png",
+            image: "../img/rice-small-desktop@1x.png",
             weight: "500 г",
             taste: "Рис",
             price: "500 Р."
