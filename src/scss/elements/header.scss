@@ -135,7 +135,7 @@
         @media (max-width:$mobile) {
             display: block;
             height: 300px;
-            content: url("../../img/index-background-mobile-1.png");
+            content: url("../../../img/index-background-mobile-1.png");
             background-size: contain;
             background-position: center;
             max-width: 100%;
@@ -159,7 +159,7 @@
         @include image;
         right: 325px;
         top: 140px;
-        background-image: url("../../img/index-can-desktop@1x.png");
+        background-image: url("../../../img/index-can-desktop@1x.png");
         position: absolute;
         width: 550px;
         height: 500px;

@@ -26,7 +26,7 @@
     .cat-container {
         width: 245px;
         height: 290px;
-        background-image: url("../../img/gift-photo-desktop@2x.jpg");
+        background-image: url("../../../img/gift-photo-desktop@2x.jpg");
         background-size: cover;
         @include flex;
         flex-direction: column;
@@ -45,7 +45,7 @@
             height: 200px;
             flex-direction: row;
             justify-content: space-around;
-            background-image: url("../../img/gift-photo-tablet@2x.jpg");
+            background-image: url("../../../img/gift-photo-tablet@2x.jpg");
             svg {
                 margin-bottom: 0;
             }

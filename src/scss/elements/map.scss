@@ -1,15 +1,15 @@
 .map {
     height: 400px;
-    background-image: url("../../img/map.png");
+    background-image: url("../../../img/map.png");
     position: relative;
     @media (max-width:$tablet) {
-        background-image: url("../../img/location-tablet.png");
+        background-image: url("../../../img/location-tablet.png");
         background-size: cover;
         background-repeat: no-repeat;
         margin-top: 200px;
     }
     @media (max-width:$mobile) {
-        background-image: url("../../img/location-mobile.png");
+        background-image: url("../../../img/location-mobile.png");
         background-position: center;
     }
 
